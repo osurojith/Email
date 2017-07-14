@@ -16,7 +16,7 @@ public class Main {
 	
 		
 		  DateFormat dateFormatter = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
-		    Date date1 = dateFormatter .parse("2017-07-14 14:24:30");
+		    Date date1 = dateFormatter .parse("2017-07-14 10:07:30");
 
 		    //Now create the time and schedule it
 		    Timer timer1 = new Timer();
@@ -27,7 +27,7 @@ public class Main {
 		    
 		    
 		    
-		    Date date2 = dateFormatter .parse("2017-07-14 14:25:30");
+		    Date date2 = dateFormatter .parse("2017-07-14 10:10:30");
 
 		    //Now create the time and schedule it
 		    Timer timer2 = new Timer();
