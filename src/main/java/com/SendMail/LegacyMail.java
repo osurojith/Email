@@ -48,7 +48,7 @@ public void run() {
 
       try {
     	  
-    	  InternetAddress[] email = InternetAddress.parse("osura.liyanage@qnet.net,pavithri.fernando@qnet.net");
+    	  InternetAddress[] email = InternetAddress.parse("joan.salas@qigroup.com,benjamin.mirando@qigroup.com,lia.dulay@qigroup.com,hattaiwat.p@qnet.net,ITApps.servicedesk@qigroup.com,peter.kwan@qnet.net,dano.dometita@qnet.net,osura.liyanage@qnet.net,pavithri.fernando@qnet.net,automated.testing@qnet.net");
            
             MimeMessage message = new MimeMessage(session);
 
