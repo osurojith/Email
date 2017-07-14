@@ -47,14 +47,14 @@ public NS4SMail(String string) {
 
 	      try {
 	    	  
-	          
+	    	  InternetAddress[] email = InternetAddress.parse("osura.liyanage@qnet.net,pavithri.fernando@qnet.net");
 	            MimeMessage message = new MimeMessage(session);
 
 	            // Set From: header field of the header.
 	            message.setFrom(new InternetAddress("qaauto@vikas.lk"));
 
 	            // Set To: header field of the header.
-	            message.addRecipient(Message.RecipientType.TO,new InternetAddress("osura.liyanage@qnet.net"));
+	            message.addRecipients(Message.RecipientType.TO,email);
 
 	            // Set Subject: header field
 	            message.setSubject("NS4S Performance Report-Production");

@@ -3,6 +3,31 @@
   <groupId>com.email</groupId>
   <artifactId>EmailSend</artifactId>
   <version>0.0.1-SNAPSHOT</version>
+   <build>
+        <plugins>
+            <plugin>
+    <groupId>org.codehaus.mojo</groupId>
+    <artifactId>exec-maven-plugin</artifactId>
+    <version>1.3.2</version>
+    <executions>
+        <execution>
+            <id>default-cli</id>
+            <!--<phase>validate</phase>--> <!-- or any other phase you want. -->
+            <phase>integration-test</phase>
+            <goals>
+                <goal>java</goal>
+            </goals>
+        </execution>
+    </executions>
+    <configuration>
+        <mainClass>com.main.Main</mainClass>
+    </configuration>
+</plugin>
+        </plugins>
+    </build>
+
+  
+  
   <dependencies>
   <!-- https://mvnrepository.com/artifact/javax.mail/mail -->
 <dependency>
@@ -11,4 +36,6 @@
     <version>1.4.7</version>
 </dependency>
   </dependencies>
+  
+  
 </project>
